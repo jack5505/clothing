@@ -1,5 +1,5 @@
 import CartActionTypes from './cart.types';
-
+import {addItemToCart}  from './cart.utils'
 const INITIAL_STATE = {
     hidden: true,
     cardItems:[]
@@ -17,7 +17,7 @@ const cartReducer = (state = INITIAL_STATE, action) => {
             ...state,
             // all existed array in ...state and add after it new element
             // this show in a way of action.payload
-            cardItems: [...state.cardItems,action.payload]
+            cardItems: addItemToCart(...state.cardItems,action.payload)
         };
     default:
       return state;
