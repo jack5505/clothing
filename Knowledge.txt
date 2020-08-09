@@ -1,0 +1,17 @@
+We have two type of windows property storage.
+One call is sessionStorage this will live untill you close the tab from browser.
+
+Other one is localStorage this will live untill you cloe the browser 
+
+If you will type down in console of browser like window.localStorage you will see method that you could use 
+
+
+window.localStorage.setItem() you might set it only in string way
+Just in case if you have object there you should convert it into json then assign into there
+
+Example
+
+const myobject= {name:"jakhongir"}
+window.localStorage.setItem('here',JSON.stringify(myobject));
+
+In this way you could store data into you localStorage;
