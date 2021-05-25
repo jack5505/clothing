@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {CardList} from "./components/card-list/cardComponents";
+import {SearchBox} from "./components/search-box/SearchBoxComponent";
 
 class  App  extends Component{
 
@@ -27,13 +28,7 @@ class  App  extends Component{
         // const email = monsters.filter(monster => monster.email.toLowerCase().includes(searchField.toLowerCase()));
         return (
             <div className="App">
-                <input type="search"
-                       placeholder="Search for monsters"
-                       onChange={event => {
-                           this.setState({searchField:event.target.value},()=>{
-                               console.log(this.state)
-                           });
-                       }}/>
+                <SearchBox placeholder="search monsters" handleChange={e => this.setState({searchField: e.target.value})}/>
                 <CardList monsters={filteredMonsters}/>
             </div>
         );
