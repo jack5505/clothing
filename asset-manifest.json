@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/clothing/static/css/main.5b435409.chunk.css",
+    "main.js": "/clothing/static/js/main.2f0613a5.chunk.js",
+    "main.js.map": "/clothing/static/js/main.2f0613a5.chunk.js.map",
+    "runtime-main.js": "/clothing/static/js/runtime-main.43df5736.js",
+    "runtime-main.js.map": "/clothing/static/js/runtime-main.43df5736.js.map",
+    "static/js/2.9ab24f1a.chunk.js": "/clothing/static/js/2.9ab24f1a.chunk.js",
+    "static/js/2.9ab24f1a.chunk.js.map": "/clothing/static/js/2.9ab24f1a.chunk.js.map",
+    "index.html": "/clothing/index.html",
+    "precache-manifest.563f73c07ac0e5bab136cf15ef0a6fec.js": "/clothing/precache-manifest.563f73c07ac0e5bab136cf15ef0a6fec.js",
+    "service-worker.js": "/clothing/service-worker.js",
+    "static/css/main.5b435409.chunk.css.map": "/clothing/static/css/main.5b435409.chunk.css.map",
+    "static/js/2.9ab24f1a.chunk.js.LICENSE.txt": "/clothing/static/js/2.9ab24f1a.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/clothing/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.43df5736.js",
+    "static/js/2.9ab24f1a.chunk.js",
+    "static/css/main.5b435409.chunk.css",
+    "static/js/main.2f0613a5.chunk.js"
+  ]
+}
