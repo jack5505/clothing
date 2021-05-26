@@ -13,8 +13,9 @@ class  App  extends Component{
       super();
       this.state = {
         monsters:[],
-        searchField:''
-      }
+        searchField:'',
+        cnt:0
+      };
 
       /**
        * The reason for this is because JavaScript by default, doesn't set its scope of this on functions.
@@ -34,6 +35,14 @@ class  App  extends Component{
         this.setState({searchField: e.target.value})
     }
 
+    handle = () =>{
+        this.setState((prevState, props) => {
+           return {cnt:prevState.cnt + 1}
+        },()=> console.log(this.state.cnt)
+        )
+
+    };
+
     render() {
         const {monsters,searchField} = this.state;
         const  filteredMonsters = monsters.filter(monster => monster.name.toLowerCase().includes(searchField.toLowerCase()));
@@ -43,6 +52,7 @@ class  App  extends Component{
                 <h1>Monster Rolodex</h1>
                 <SearchBox placeholder="search monsters" handleChange={this.handleChange}/>
                 <CardList monsters={filteredMonsters}/>
+                <button onClick={this.handle}>Clicke me{this.state.cnt}</button>
             </div>
         );
     }
