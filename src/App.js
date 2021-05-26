@@ -40,6 +40,7 @@ class  App  extends Component{
         // const email = monsters.filter(monster => monster.email.toLowerCase().includes(searchField.toLowerCase()));
         return (
             <div className="App">
+                <h1>Monster Rolodex</h1>
                 <SearchBox placeholder="search monsters" handleChange={this.handleChange}/>
                 <CardList monsters={filteredMonsters}/>
             </div>
